@@ -21,3 +21,12 @@ remotes:
 - name: '{{ cluster.name }}'      # DO NOT edit this line
   deployments:                  # DO NOT edit this line
 
+
+  - containers:
+    - dockerBuild:
+        contextPath: microservices/ui
+        dockerfilePath: microservices/ui/Dockerfile
+      name: ui
+    name: ui
+    namespace: '{{ cluster.metadata.namespaces.user }}'
+

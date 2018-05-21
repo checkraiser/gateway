@@ -1,0 +1,3 @@
+- args:
+    name: service_typies
+  type: add_existing_table_or_view

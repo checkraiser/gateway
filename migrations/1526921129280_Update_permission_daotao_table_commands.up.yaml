@@ -1,0 +1,13 @@
+- args:
+    permission:
+      columns:
+      - id
+      - name
+      - note
+      - service_id
+      filter:
+        service_id:
+          $eq: "1"
+    role: daotao
+    table: commands
+  type: create_select_permission

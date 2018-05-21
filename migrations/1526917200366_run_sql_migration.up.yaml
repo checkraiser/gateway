@@ -1,0 +1,7 @@
+- args:
+    sql: "CREATE TABLE service_typies(\r\n  id              SERIAL PRIMARY KEY,\r\n
+      \ name           VARCHAR(100) NOT NULL\r\n  );\r\n  \r\n  INSERT INTO service_typies(name)
+      VALUES ('soap');\r\n  INSERT INTO service_typies(name) VALUES ('rest');\r\n
+      \ INSERT INTO service_typies(name) VALUES ('db');\r\n  INSERT INTO service_typies(name)
+      VALUES ('graphql');\r\n  \r\n"
+  type: run_sql

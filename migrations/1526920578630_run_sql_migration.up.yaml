@@ -1,0 +1,11 @@
+- args:
+    sql: "CREATE TABLE commands (\r\n  id              SERIAL PRIMARY KEY,\r\n  name
+      \          VARCHAR(100) NOT NULL,\r\n  service_id integer,\r\n  note VARCHAR(200),\r\n
+      \ FOREIGN KEY (service_id) REFERENCES services (id)\r\n  );\r\n  INSERT INTO
+      commands(name,service_id,note) VALUES ('BangDiem',1,'Bảng điểm chi tiết của
+      sinh viên theo năm học học kỳ');\r\n  INSERT INTO commands(name,service_id,note)
+      VALUES ('BangDiemToanKhoa',1,'Bảng điểm toàn khóa của sinh viên theo năm học');"
+  type: run_sql
+- args:
+    name: commands
+  type: add_existing_table_or_view

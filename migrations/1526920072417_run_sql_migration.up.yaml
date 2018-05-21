@@ -1,0 +1,14 @@
+- args:
+    sql: "CREATE TABLE services (\r\n  id              SERIAL PRIMARY KEY,\r\n  name
+      \          VARCHAR(100) NOT NULL,\r\n  url           VARCHAR(100) NOT NULL,\r\n
+      \ service_type_id integer,\r\n  FOREIGN KEY (service_type_id) REFERENCES service_typies
+      (id)\r\n  );\r\n  \r\n    \r\n  INSERT INTO Services(name,url,service_type_id)
+      VALUES ('Dao tao','http://10.1.0.236:8088',1);\r\n  INSERT INTO Services(name,url,service_type_id)
+      VALUES ('Tai chinh','http://10.1.0.236:8088',1);\r\n  INSERT INTO Services(name,url,service_type_id)
+      VALUES ('ctsv','http://10.1.0.236:8088',1);\r\n  INSERT INTO Services(name,url,service_type_id)
+      VALUES ('kiem dinh','http://10.1.0.236:8088',1);\r\n  INSERT INTO Services(name,url,service_type_id)
+      VALUES ('thanh tra','http://10.1.0.236:8088',1);"
+  type: run_sql
+- args:
+    name: services
+  type: add_existing_table_or_view

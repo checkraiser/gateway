@@ -1,0 +1,18 @@
+- args:
+    role: daotao
+    table: services
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - id
+      - name
+      - url
+      - service_type_id
+      filter:
+        id:
+          $in:
+          - "1"
+    role: daotao
+    table: services
+  type: create_select_permission

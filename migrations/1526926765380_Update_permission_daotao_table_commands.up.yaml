@@ -1,0 +1,8 @@
+- args:
+    permission:
+      columns:
+      - name
+      filter: {}
+    role: daotao
+    table: commands
+  type: create_select_permission

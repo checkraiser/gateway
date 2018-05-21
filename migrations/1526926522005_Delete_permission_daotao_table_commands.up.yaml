@@ -1,0 +1,4 @@
+- args:
+    role: daotao
+    table: commands
+  type: drop_select_permission

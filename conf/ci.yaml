@@ -25,7 +25,7 @@ remotes:
   - containers:
     - dockerBuild:
         contextPath: microservices/ui
-        dockerfilePath: microservices\ui\Dockerfile
+        dockerfilePath: microservices/ui/Dockerfile
       name: ui
     name: ui
     namespace: '{{ cluster.metadata.namespaces.user }}'
